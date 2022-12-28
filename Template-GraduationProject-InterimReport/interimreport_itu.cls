@@ -978,7 +978,7 @@ LİSTESİ\fi\normalfont}
     \th@titleAnaBilimDaliFtSz \Anabilim\\
     \vskip 12\p@ 
     \th@titleAnaBilimDaliFtSz \Program \\
-	\vskip 175\p@ 
+    \null\vfill %To prevent the page from breaking
 	\th@titleFtSz Interim Report Date (\TarihKucuk) \\
 	\newpage
 %\vspace*{\fill}
