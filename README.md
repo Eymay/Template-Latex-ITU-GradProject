@@ -1,12 +1,8 @@
-# Istanbul Technical University - LaTeX Thesis Template (İstanbul Teknik Üniversitesi (İTÜ) - LaTeX Tez Şablonu)
+# Istanbul Technical University - LaTeX Graduation Project Template (İstanbul Teknik Üniversitesi (İTÜ) - LaTeX Bitirme Projesi Şablonu)
 
-This repo includes the following documents from [ITU Graduate School of Science Engineering & Technology Website](http://www.fbe.itu.edu.tr/en/current-students/masters-degree/documents) in LaTeX format:
+This repo is a template for graduation projects in LaTeX format.
 
-- [ITU Graduate Thesis Template](https://github.com/ondes/Template-Latex-ITU-Thesis/tree/master/Template-Thesis)
-- [ITU Graduate Thesis Proposal Template](https://github.com/ondes/Template-Latex-ITU-Thesis/tree/master/Template-Thesis-Proposal)
-- [ITU Graduate Thesis Progress Report Template](https://github.com/ondes/Template-Latex-ITU-Thesis/tree/master/Template-Thesis-ProgressReport)
 
-Also, [Graduation Project Interim Report Template](https://github.com/ondes/Template-Latex-ITU-Thesis/tree/master/Template-GraduationProject-InterimReport) prepared by [Dr. Salih Baris Ozturk](https://github.com/SBarisOzturk) is added.
 
 ## Useful Links & Tools:
 
