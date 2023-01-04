@@ -161,6 +161,8 @@
   \th@StoreIn{\th@soyisimisimuc}{#2, #1}
 }
 
+
+
 \newcommand*{\anabilimdali}[2]{
   \th@StoreIn{\th@AnaBilimDali}{#1}
   \th@StoreIn{\th@Department}{#2}
@@ -213,6 +215,8 @@
 \newcommand*{\ogrencinobir}[1]{\th@StoreIn{\th@ogrencinobir}{#1}}
 \newcommand*{\ogrencinoiki}[1]{\th@StoreIn{\th@ogrencinoiki}{#1}}
 \newcommand*{\ogrencinouc}[1]{\th@StoreIn{\th@ogrencinouc}{#1}}
+
+\newcommand*{\tezyoneticisi}[1]{\th@StoreIn{\th@tezyoneticisi}{#1}}
 
 
 %========================= KAPAK AND EKLERIN INGILIZCE TURKCE TANIMLAMALARI ==========================
@@ -912,6 +916,10 @@ LİSTESİ\fi\normalfont}
 	\end{textblock*}
 	%\vspace*{168pt}
 	\vskip 140\p@ 
+  \MakeUppercase{\underline{SENIOR DESIGN PROJECT }}\\
+  \vskip 1\p@ 
+  \MakeUppercase{\underline{INTERIM REPORT}}\\
+  \vskip 30\p@ 
 	\th@titleFtSz \th@isimsoyisimbir  \\
 	\th@titleFtSz (\th@ogrencinobir) \\
 	\vskip 10\p@ 
@@ -925,12 +933,41 @@ LİSTESİ\fi\normalfont}
     \th@titleAnaBilimDaliFtSz \MakeUppercase{\Anabilim}\\
     \th@titleAnaBilimDaliFtSz \MakeUppercase{Department}\\
     \vskip 12\p@ 
-    \th@titleFtSz Project Advisor:\\
+    \th@titleFtSz Project Advisor:\th@tezyoneticisi\\
 
     %\th@titleAnaBilimDaliFtSz \Program \\
     \vspace*{\fill}
     \null\vfill %To prevent the page from breaking
 	\th@titleFtSz \TarihKucuk
+	\newpage
+%\vspace*{\fill}
+}
+
+\newcommand*{\th@Ethical}{
+	\addtocontents{toc}{\protect\addvspace{-10\p@}}
+	\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
+	\singlespacing  				% For single spacing in the top portion of kapak - SBÖ
+	\makeatletter
+	\raggedright
+	\makeatother	
+	\vspace*{0pt}
+	We are submitting the Senior Design Project Interim Report entitled as “\MakeUppercase{\th@Titlebir \th@Titleiki \th@Titleuc}”.
+   The  Senior Design Project Interim Report has been prepared as to fulfill the relevant 
+   regulations of the Electronics and Communication Engineering Department of Istanbul Technical
+    University. We hereby confirm that we have realized all stages of the Senior Design Project 
+    Interim Report by ourselves, and we have abided by the ethical rules with respect to academic 
+    and professional integrity . 
+	
+  \vskip 30\p@ 
+	\hspace{70\p@} \th@titleFtSz \th@isimsoyisimbir  \\
+	\hspace{70\p@}\th@titleFtSz (\th@ogrencinobir) \\
+	\vskip 10\p@ 
+	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimiki  \\
+	\hspace{70\p@}\th@titleFtSz (\th@ogrencinoiki) \\
+	\vskip 10\p@ 
+	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimuc  \\
+	\hspace{70\p@}\th@titleFtSz (\th@ogrencinouc) \\
+
 	\newpage
 %\vspace*{\fill}
 }
@@ -1064,6 +1101,7 @@ LİSTESİ\fi\normalfont}
     \renewcommand*{\thepage}{\small{\roman{page}}}  	% Page number font size set to 11 pt for roman pages - SBÖ
     \th@Kapak
     \th@IcKapak
+    \th@Ethical
     \fontfamily{cmr}
     \selectfont
     \setcounter{page}{\if@Ingilizce \if@Onluarkali 2 \else 3 \fi \else 
