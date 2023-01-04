@@ -90,8 +90,8 @@
 \lhead{} % Left header empty
 \chead{} % Center header empty
 \rhead{} % Right header empty
-\lfoot{} % Left foot empty
-\cfoot{\thepage} % Center foot page number included
+\lfoot{\thepage} % Left foot empty
+\cfoot{} % Center foot page number included
 \rfoot{} % Right foot empty 
 \renewcommand{\headrulewidth}{0pt} 
 
