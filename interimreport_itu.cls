@@ -30,7 +30,6 @@
 \DeclareOption{ingilizce}{\@Ingilizcetrue}
 \DeclareOption{turkce}{\@Ingilizcefalse}
 \DeclareOption{elektrikelektronik}{\@ElektrikElektroniktrue} % Elektrik-Elektronik Fakültesi - SBÖ
-\DeclareOption{enerji}{\@Enerjitrue}
 
 \ProcessOptions
 %=================================== LOADING CLASS AND PACKAGES =====================================
@@ -149,39 +148,17 @@
 %========================================= KAPAK SETTINGS  ==========================================
 \newcommand{\th@StoreIn}[2]{\gdef#1{#2}}  %% Stores the second arg in the command specified by the first arg.
 
-\newcommand*{\yazar}[2]{
-  \th@StoreIn{\th@isimsoyisim}{#1 #2}
-  \th@StoreIn{\th@soyisimisim}{#2, #1}
+\newcommand*{\yazarbir}[2]{
+  \th@StoreIn{\th@isimsoyisimbir}{#1 #2}
+  \th@StoreIn{\th@soyisimisimbir}{#2, #1}
 }
-
-\newcommand*{\juriBir}[2]{
-  \th@StoreIn{\th@juribir}{#1}
-  \th@StoreIn{\th@juribiruniv}{#2}
+\newcommand*{\yazariki}[2]{
+  \th@StoreIn{\th@isimsoyisimiki}{#1 #2}
+  \th@StoreIn{\th@soyisimisimiki}{#2, #1}
 }
-
-\newcommand*{\juriIki}[2]{
-  \th@StoreIn{\th@juriiki}{#1}
-  \th@StoreIn{\th@juriikiuniv}{#2}
-}
-
-\newcommand*{\juriUc}[2]{
-  \th@StoreIn{\th@juriuc}{#1}
-  \th@StoreIn{\th@juriucuniv}{#2}
-}
-
-\newcommand*{\juriDort}[2]{
-  \th@StoreIn{\th@juridort}{#1}
-  \th@StoreIn{\th@juridortuniv}{#2}
-}
-
-\newcommand*{\juriBes}[2]{
-  \th@StoreIn{\th@juribes}{#1}
-  \th@StoreIn{\th@juribesuniv}{#2}
-}
-
-\newcommand{\tezyoneticisi}[2]{
-  \th@StoreIn{\th@TezYoneticisi}{#1}
-  \th@StoreIn{\th@TezYoneticisiUniv}{#2}
+\newcommand*{\yazaruc}[2]{
+  \th@StoreIn{\th@isimsoyisimuc}{#1 #2}
+  \th@StoreIn{\th@soyisimisimuc}{#2, #1}
 }
 
 \newcommand*{\anabilimdali}[2]{
@@ -197,8 +174,8 @@
 %================================= FACULTY SETTINGS =================================== 
     \if@ElektrikElektronik 										% Added recently - SBÖ
     \def\th@Enstitu{ELEKTRİK-ELEKTRONİK FAKÜLTESİ}
-    \def\th@Institute{FACULTY OF ELECTRICAL AND}
-    \def\th@Instituteiki{ELECTRONICS}
+    \def\th@Institute{ELECTRICAL-ELECTRONICS FACULTY}
+    \def\th@Instituteiki{}
     \fi
 
 %=================================== ALL PAGES FROM KAPAK TO TOC =====================================  
@@ -233,12 +210,10 @@
   \th@StoreIn{\th@tarihKucuk}{#1}
   \th@StoreIn{\th@dateKucuk}{#2}
 }
-\newcommand*{\ogrencino}[1]{\th@StoreIn{\th@ogrencino}{#1}}
+\newcommand*{\ogrencinobir}[1]{\th@StoreIn{\th@ogrencinobir}{#1}}
+\newcommand*{\ogrencinoiki}[1]{\th@StoreIn{\th@ogrencinoiki}{#1}}
+\newcommand*{\ogrencinouc}[1]{\th@StoreIn{\th@ogrencinouc}{#1}}
 
-\newcommand*{\esdanismani}[2]{
-  \th@StoreIn{\th@esdanisman}{#1}
-  \th@StoreIn{\th@esdanismanuniv}{#2}
-}
 
 %========================= KAPAK AND EKLERIN INGILIZCE TURKCE TANIMLAMALARI ==========================
 \if@Ingilizce
@@ -259,7 +234,6 @@
   \def\TarihKucuk{\th@dateKucuk}
   \def\YoneticiBaslik{Supervisor (Chairman)}
   \def\DanismanBaslik{Thesis Advisor}
-  \def\JuriBaslik{Members of the Thesis Steering Committee}
   \def\EklerinBasligi{APPENDICES}
 \else
 
@@ -277,7 +251,6 @@
   \def\TarihKucuk{\th@tarihKucuk}
   \def\YoneticiBaslik{Tez Danışmanı}
   \def\DanismanBaslik{Tez Danışmanı}
-  \def\JuriBaslik{Jüri Üyeleri}
   \def\EklerinBasligi{EKLER}
 \fi
 %====================================== BIBTEX ICIN TANIMLAMALAR =====================================
@@ -296,6 +269,8 @@
   \def\bolum{chapter}
   \def\teknikrapor{Technical Report}
   \def\lisanstezi{B.Sc. Thesis}
+  \def\yuksektezi{M.Sc. Thesis}
+  \def\doktoratezi{Ph.D. Dissertation}
 \else
   \def\baglac{ve}
   \def\etal{ve diğerleri}
@@ -605,11 +580,8 @@ LİSTESİ\fi\normalfont}
     \ClassError{itutez}{*** You must specify the DATE of your thesis! ***}
     {Use the \protect\tarih{} command in the preamble.}}
 
-\newcommand*{\th@TeziYoneten}{
-    \ClassError{itutez}{*** You must specify the TEZIYONETEN of your thesis! ***}
-    {Use the \protect\TeziYoneten{} command in the preamble.}}
 
-\newcommand*{\th@isimsoyisim}{
+\newcommand*{\th@isimsoyisimbir}{
     \ClassError{itutez}{*** You must specify the AUTHOR of your thesis! ***}
     {Use the \protect\author{}{} command in the \MessageBreak
         preamble. The first arg is your first name and \MessageBreak
@@ -887,9 +859,49 @@ LİSTESİ\fi\normalfont}
 	\centering
 	\makeatother	
 	\vspace*{0pt}
-	\bf\th@UniversityUpper \\
+	\underline{\bf\th@UniversityUpper} \\
+	\vskip 6\p@ 
+	\MakeUppercase{\underline{\bf\th@Institute~\th@Instituteiki}} \\
+	\vskip 50\p@ 
+	
+	\vskip 50\p@
+	\begin{textblock*}{\textwidth}[0,0](25mm,90.5mm)
+		\if@Ingilizce 
+		\th@titleFtSz\Baslikspacing \Baslikbir~\Baslikiki~\Baslikuc \\
+		%\vskip 24\p@ 
+	\end{textblock*}
+	%\vspace*{168pt}
+	\vskip 150\p@ 
+  \MakeUppercase{\underline{SENIOR DESIGN PROJECT }}\\
+  \vskip 1\p@ 
+  \MakeUppercase{\underline{INTERIM REPORT}}\\
+  \vskip 30\p@ 
+	\th@titleFtSz \th@isimsoyisimbir  \\
+	\th@titleFtSz \th@isimsoyisimiki  \\
+	\th@titleFtSz \th@isimsoyisimuc  \\
 	\vskip 12\p@ 
-	\MakeUppercase{\bf\th@Institute~\th@Instituteiki} \\
+    \vskip 50\p@ 
+    \th@titleAnaBilimDaliFtSz \MakeUppercase{\Anabilim}\\
+    \th@titleAnaBilimDaliFtSz \MakeUppercase{Department}\\
+    \vskip 12\p@ 
+    %\th@titleAnaBilimDaliFtSz \Program \\
+    \vspace*{\fill}
+    \null\vfill %To prevent the page from breaking
+	\th@titleFtSz \TarihKucuk
+	\newpage
+%\vspace*{\fill}
+}
+\newcommand*{\th@IcKapak}{
+	\addtocontents{toc}{\protect\addvspace{-10\p@}}
+	\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
+	\singlespacing  				% For single spacing in the top portion of kapak - SBÖ
+	\makeatletter
+	\centering
+	\makeatother	
+	\vspace*{0pt}
+	\underline{\bf\th@UniversityUpper} \\
+	\vskip 6\p@ 
+	\MakeUppercase{\underline{\bf\th@Institute~\th@Instituteiki}} \\
 	\vskip 50\p@ 
 	
 	\vskip 50\p@
@@ -900,18 +912,29 @@ LİSTESİ\fi\normalfont}
 	\end{textblock*}
 	%\vspace*{168pt}
 	\vskip 140\p@ 
-	\th@titleFtSz \th@isimsoyisim  \\
+	\th@titleFtSz \th@isimsoyisimbir  \\
+	\th@titleFtSz (\th@ogrencinobir) \\
+	\vskip 10\p@ 
+	\th@titleFtSz \th@isimsoyisimiki  \\
+	\th@titleFtSz (\th@ogrencinoiki) \\
+	\vskip 10\p@ 
+	\th@titleFtSz \th@isimsoyisimuc  \\
+	\th@titleFtSz (\th@ogrencinouc) \\
 	\vskip 12\p@ 
-	\th@titleFtSz (\th@ogrencino) \\
     \vskip 12\p@ 
-    \th@titleAnaBilimDaliFtSz \Anabilim\\
+    \th@titleAnaBilimDaliFtSz \MakeUppercase{\Anabilim}\\
+    \th@titleAnaBilimDaliFtSz \MakeUppercase{Department}\\
     \vskip 12\p@ 
-    \th@titleAnaBilimDaliFtSz \Program \\
+    \th@titleFtSz Project Advisor:\\
+
+    %\th@titleAnaBilimDaliFtSz \Program \\
+    \vspace*{\fill}
     \null\vfill %To prevent the page from breaking
-	\th@titleFtSz Interim Report Date (\TarihKucuk) \\
+	\th@titleFtSz \TarihKucuk
 	\newpage
 %\vspace*{\fill}
 }
+
 
 %======================================== TOC PAGE SETTINGS ========================================= - SBÖ
 \renewcommand\tableofcontents{
@@ -1040,6 +1063,7 @@ LİSTESİ\fi\normalfont}
     \pagenumbering{roman}								
     \renewcommand*{\thepage}{\small{\roman{page}}}  	% Page number font size set to 11 pt for roman pages - SBÖ
     \th@Kapak
+    \th@IcKapak
     \fontfamily{cmr}
     \selectfont
     \setcounter{page}{\if@Ingilizce \if@Onluarkali 2 \else 3 \fi \else 
