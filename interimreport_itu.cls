@@ -90,8 +90,8 @@
 \lhead{} % Left header empty
 \chead{} % Center header empty
 \rhead{} % Right header empty
-\lfoot{\thepage} % Left foot empty
-\cfoot{} % Center foot page number included
+%\lfoot{\thepage} % Left foot empty
+%\cfoot{} % Center foot page number included
 \rfoot{} % Right foot empty 
 \renewcommand{\headrulewidth}{0pt} 
 
@@ -1097,6 +1097,8 @@ LİSTESİ\fi\normalfont}
     \thispagestyle{empty}
     \fontfamily{ptm}
     \selectfont
+    \lfoot{} % Left foot empty
+    \cfoot{\thepage} % Center foot page number included
     \pagenumbering{roman}								
     \renewcommand*{\thepage}{\small{\roman{page}}}  	% Page number font size set to 11 pt for roman pages - SBÖ
     \th@Kapak
@@ -1132,6 +1134,8 @@ LİSTESİ\fi\normalfont}
 \renewcommand*{\document}{
     \th@OldBeginDocument
     \th@MakeThesisPrologue
+    \lfoot{\thepage} % Left foot empty
+    \cfoot{} % Center foot page number included
     \pagenumbering{arabic}
     \renewcommand*{\thepage}{\small{\arabic{page}}} % Page number font size set to 11 pt = small - SBÖ
 }
