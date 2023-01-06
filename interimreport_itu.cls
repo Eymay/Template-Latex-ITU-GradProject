@@ -371,6 +371,7 @@ LİSTESİ\fi\normalfont}
 \newcommand*{\bibnameToC}{\fontfamily{ptm}\normalsize\selectfont \if@Ingilizce REFERENCES\else KAYNAKLAR\fi\normalfont}
 \newcommand*{\insidecoverToC}{\fontfamily{ptm}\normalsize\selectfont \if@Ingilizce INSIDE COVER\else İÇ KAPAK\fi\normalfont}
 \newcommand*{\frontcoverToC}{\fontfamily{ptm}\normalsize\selectfont \if@Ingilizce FRONT COVER\else DIŞ KAPAK\fi\normalfont}
+\newcommand*{\ethicalcoverToC}{\fontfamily{ptm}\normalsize\selectfont \if@Ingilizce ETHICAL CONFIRMATION\else DIŞ KAPAK\fi\normalfont}
 
 
 \def\refname{\th@ChapHead{\if@Ingilizce REFERENCES\else KAYNAKLAR\fi}}
@@ -876,9 +877,9 @@ LİSTESİ\fi\normalfont}
 	\end{textblock*}
 	%\vspace*{168pt}
 	\vskip 150\p@ 
-  \MakeUppercase{\underline{SENIOR DESIGN PROJECT }}\\
+  \MakeUppercase{\underline{\bf SENIOR DESIGN PROJECT }}\\
   \vskip 1\p@ 
-  \MakeUppercase{\underline{INTERIM REPORT}}\\
+  \MakeUppercase{\underline{\bf INTERIM REPORT}}\\
   \vskip 30\p@ 
 	\th@titleFtSz \th@isimsoyisimbir  \\
 	\th@titleFtSz \th@isimsoyisimiki  \\
@@ -897,7 +898,7 @@ LİSTESİ\fi\normalfont}
 }
 \newcommand*{\th@IcKapak}{
 	\addtocontents{toc}{\protect\addvspace{-10\p@}}
-	\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
+	\addcontentsline{toc}{chapter}{\bf{\protect\insidecoverToC}}
 	\singlespacing  				% For single spacing in the top portion of kapak - SBÖ
 	\makeatletter
 	\centering
@@ -932,7 +933,7 @@ LİSTESİ\fi\normalfont}
     \vskip 12\p@ 
     \th@titleAnaBilimDaliFtSz \MakeUppercase{\Anabilim}\\
     \th@titleAnaBilimDaliFtSz \MakeUppercase{Department}\\
-    \vskip 12\p@ 
+    \vskip 60\p@ 
     \th@titleFtSz Project Advisor:\th@tezyoneticisi\\
 
     %\th@titleAnaBilimDaliFtSz \Program \\
@@ -945,7 +946,7 @@ LİSTESİ\fi\normalfont}
 
 \newcommand*{\th@Ethical}{
 	\addtocontents{toc}{\protect\addvspace{-10\p@}}
-	\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
+	\addcontentsline{toc}{chapter}{\bf{\protect\ethicalcoverToC}}
 	\singlespacing  				% For single spacing in the top portion of kapak - SBÖ
 	\makeatletter
 	\raggedright
