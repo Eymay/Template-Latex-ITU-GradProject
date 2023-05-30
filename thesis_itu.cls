@@ -273,8 +273,8 @@
     \if@ElektrikElektronik 									% Added recently - SBÖ
     	\def\th@Enstitu{Elektr\.ik-Elektron\.ik Fak\"ultes\.i}
 	\def\th@EnstituIki{}		
-    	\def\th@Institute{FACULTY OF ELECTRICAL AND}
-    	\def\th@Instituteiki{ELECTRONICS}
+    	\def\th@Institute{ELECTRICAL-ELECTRONICS FACULTY}
+    	\def\th@Instituteiki{}
     \fi
 %================================== ALL PAGES FROM KAPAK TO FORWARD ==================================  
 \newcommand{\kapak}[1]{\th@StoreIn{\th@Kapak}{#1}}
@@ -343,8 +343,8 @@
     \def\TezSeviyesiTR{ B{\.I}T{\.I}RME ÇALIŞMASI}
   \fi
   % Modification of the size and the placement of bigstar - SBÖ
-  \def\th@EnstituUpper{ISTANBUL TECHNICAL UNIVERSITY \raisebox{1.6pt}{\footnotesize$\bigstar$} \MakeUppercase{\th@Institute}}
-  \def\th@EnstituUpperTR{İSTANBUL TEKNİK ÜNİVERSİTESİ \raisebox{1.6pt}{\footnotesize$\bigstar$} \MakeUppercase{\th@Enstitu}}
+  \def\th@EnstituUpper{\MakeUppercase{\th@Institute}}
+  \def\th@EnstituUpperTR{\MakeUppercase{\th@Enstitu}}
   %\def\th@EnstituUpper{İSTANBUL TECHNICAL UNIVERSITY $\bigstar$ INSTITUTE OF SCIENCE AND TECHNOLOGY}
   \def\Baslikbir{\th@Titlebir}
   \def\Baslikiki{\th@Titleiki}
@@ -1072,6 +1072,8 @@ KISALTMALAR\fi\normalfont}
     	\renewcommand{\ULdepth}{2.75pt} 	% Added using ulem package for \uline command - SBÖ
     	\renewcommand{\ULthickness}{1.5pt} 	% Added for underline tickness change which was 0.4pt - SBÖ
     	\centering
+        \uline{\textbf{ISTANBUL TECHNICAL UNIVERSITY}} \\
+	\vskip 6\p@ 
     	\uline{{\bf\th@EnstituUpper}}\\ 	% Instead of \underline{text} - SBÖ
 	\end{textblock*}
 
@@ -1149,6 +1151,8 @@ KISALTMALAR\fi\normalfont}
 		\renewcommand{\ULdepth}{2.75pt} 	% Added using ulem package for \uline command - SBÖ
 		\renewcommand{\ULthickness}{1.5pt} 	% Added for underline tickness change which was 0.4pt - SBÖ
 		\centering
+        \uline{\textbf{ISTANBUL TECHNICAL UNIVERSITY}} \\
+	\vskip 6\p@ 
 		\uline{{\bf\th@EnstituUpper}}\\ %Instead of \underline{text} - SBÖ
 	\end{textblock*}
 	
