@@ -381,7 +381,7 @@
   \def\Baslikiki{\th@baslikiki}
   \def\Baslikuc{\th@baslikuc}
   \def\Anabilim{\th@AnaBilimDali}
-  \def\AnabilimBaslik{Anabilim Dalı}
+  \def\AnabilimBaslik{Anabilim Dalı}\th@Ethical
   \def\Program{\th@Programi}
   \def\ProgramBaslik{Programı}
   \def\TarihBuyuk{\th@tarih}
@@ -1251,6 +1251,12 @@ KISALTMALAR\fi\normalfont}
 		\centering
 		\th@titleFtSz \th@isimsoyisimbir  \\
 		\th@titleFtSz (\th@ogrencinobir) \\
+        \vskip 10\p@ 
+        \th@titleFtSz \th@isimsoyisimiki  \\
+        \th@titleFtSz (\th@ogrencinoiki) \\
+        \vskip 10\p@ 
+        \th@titleFtSz \th@isimsoyisimuc  \\
+        \th@titleFtSz (\th@ogrencinouc) \\
 	\end{textblock*}
 	
 	\begin{textblock*}{\textwidth}[0,0](40mm,200mm)
@@ -1282,6 +1288,39 @@ KISALTMALAR\fi\normalfont}
 	
 	\vspace*{\fill}
 }
+
+%========================================= ETHICAL SETTINGS =========================================
+\newcommand*{\th@Ethical}{
+	\BolumSagdaKalsin
+	%\thispagestyle{empty}
+	%\addtocontents{toc}{\protect\addvspace{-10\p@}}
+	%\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
+	\singlespacing  				% For single spacing in the top portion of kapak - SBÖ
+	\makeatletter
+	\raggedright
+	\makeatother	
+	\vspace*{0pt}
+	We are submitting the Senior Design Project Interim Report entitled as “\MakeUppercase{\th@Titlebir \th@Titleiki \th@Titleuc}”.
+   The  Senior Design Project Interim Report has been prepared as to fulfill the relevant 
+   regulations of the Electronics and Communication Engineering Department of Istanbul Technical
+    University. We hereby confirm that we have realized all stages of the Senior Design Project 
+    Interim Report by ourselves, and we have abided by the ethical rules with respect to academic 
+    and professional integrity . 
+
+  \vskip 30\p@ 
+	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimbir  \\
+	\hspace{70\p@}\th@titleFtSz (\th@ogrencinobir) \\
+	\vskip 10\p@ 
+	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimiki  \\
+	\hspace{70\p@}\th@titleFtSz (\th@ogrencinoiki) \\
+	\vskip 10\p@ 
+	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimuc  \\
+    \hspace{70\p@}{\th@titleFtSz (\th@ogrencinouc)} \\
+
+	\sloppy 
+	\vspace*{\fill}
+}
+
 
 %========================================= ONAY PAGE SETTINGS ========================================= - SBÖ
 \newcommand{\th@onaypage}{					% onaypage is modified to match with word template as much as possible - SBÖ	
@@ -1661,6 +1700,10 @@ KISALTMALAR\fi\normalfont}
 	\normalfont\selectfont	      	 % MS Times fontu için
 
     \ifthenelse{\equal{\th@Ithaf}{}}{}{\th@IthafSayfasi} 
+    \th@Ethical
+
+	\renewcommand{\ttdefault}{pcr}   % MS Times fontu için
+	\normalfont\selectfont	      	 % MS Times fontu için
 
         \if@TesekkurVar
 	\th@Onsoz
