@@ -339,7 +339,7 @@
     \def\TezSeviyesiTR{YüKSEK L{\.I}SANS TEZ{\.I}}
   \fi
   \if@Lisans
-    \def\TezSeviyesi{GRADUATION THESIS}
+    \def\TezSeviyesi{SENIOR DESIGN PROJECT}
     \def\TezSeviyesiTR{ B{\.I}T{\.I}RME ÇALIŞMASI}
   \fi
   % Modification of the size and the placement of bigstar - SBÖ
