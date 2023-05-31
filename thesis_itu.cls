@@ -776,7 +776,7 @@ KISALTMALAR\fi\normalfont}
         use the optional argument with the word 'long'.}
 }
 
-\newcommand{\th@ozgecmisStash}{
+\newcommand{\th@ozgecmisStashbir}{
     \ClassError{itutez}{*** You must specify an ozgecmis ***}
     {Use the \protect\ozgecmispage[]{} command in the \MessageBreak
         preamble. If your abstract runs over a page, \MessageBreak
@@ -787,7 +787,9 @@ KISALTMALAR\fi\normalfont}
 % Tesekkur, symbol lists, and abbreviation lists were set to false earlier now they are all true - SBÖ
 \newcommand{\summary}[1]{\th@StoreIn{\th@abstractStash}{#1}}
 \newcommand{\ozet}[1]{\th@StoreIn{\th@ozetStash}{#1}}
-\newcommand{\ozgecmis}[1]{\th@StoreIn{\th@ozgecmisStash}{#1}}
+\newcommand{\ozgecmisbir}[1]{\th@StoreIn{\th@ozgecmisStashbir}{#1}}
+\newcommand{\ozgecmisiki}[1]{\th@StoreIn{\th@ozgecmisStashiki}{#1}}
+\newcommand{\ozgecmisuc}[1]{\th@StoreIn{\th@ozgecmisStashuc}{#1}}
 \newcommand{\onsoz}[1]{\@TesekkurVartrue\th@StoreIn{\th@tesekkurStash}{#1}}
 \newcommand{\sembollistesi}[1]{\@SembolListesiVartrue\th@StoreIn{\th@symbollistStash}{#1}}
 \newcommand{\kisaltmalistesi}[1]{\@KisaltmaListesiVartrue\th@StoreIn{\th@kisaltmalistStash}{#1}}
@@ -1535,7 +1537,7 @@ KISALTMALAR\fi\normalfont}
 }
 
 %====================================== ÖZGEÇMİŞ PAGE SETTINGS ======================================== - SBÖ
-\newcommand{\th@ozgecmispage}{
+\newcommand{\beforeOzgecmis}{
     \BolumSagdaKalsinNolu
     \vspace*{\UstenBosluk}
     \begin{list}{}{\setlength{\leftmargin}{0cm}\setlength{\rightmargin}{0cm}}
@@ -1546,7 +1548,14 @@ KISALTMALAR\fi\normalfont}
     \end{list}
 	\singlespacing
     \sloppy
-    \th@ozgecmisStash   % the actual ozgecmis
+}
+\newcommand{\th@ozgecmispage}{
+    \beforeOzgecmis
+    \th@ozgecmisStashbir   % the actual ozgecmis
+    \beforeOzgecmis
+    \th@ozgecmisStashiki   % the actual ozgecmis
+    \beforeOzgecmis
+    \th@ozgecmisStashuc   % the actual ozgecmis
 }
 
 %======================================== TOC PAGE SETTINGS =========================================== - SBÖ
