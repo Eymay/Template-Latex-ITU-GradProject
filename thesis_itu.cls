@@ -1262,10 +1262,6 @@ KISALTMALAR\fi\normalfont}
 		\th@titleAnaBilimDaliFtSz \th@AnaBilimDali \\
 	\end{textblock*}
 	
-	\begin{textblock*}{\textwidth}[0,0](40mm,210mm)
-		\centering
-		\th@titleAnaBilimDaliFtSz \th@Programi \\
-	\end{textblock*}
 	
 	\begin{textblock*}{\textwidth}[0,0](40mm,230mm)
 		\centering
