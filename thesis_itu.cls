@@ -1093,8 +1093,8 @@ KISALTMALAR\fi\normalfont}
 	\begin{textblock*}{\textwidth}[0,0](40mm,80.5mm)
 		\centering
 		\th@titleFtSz\Baslikspacing \Baslikbir \\
-        \th@titleFtSz\Baslikspacing \Baslikiki \\
-        \th@titleFtSz\Baslikspacing \Baslikuc \\
+		\ifthenelse{\equal{\Baslikiki}{}}{}{\th@titleFtSz\Baslikspacing \Baslikiki \\}
+		\ifthenelse{\equal{\Baslikuc}{}}{}{\th@titleFtSz\Baslikspacing \Baslikuc \\}
 	\end{textblock*}
 
 	\begin{textblock*}{\textwidth}[0,0](40mm,150mm)
@@ -1168,8 +1168,8 @@ KISALTMALAR\fi\normalfont}
 	\begin{textblock*}{\textwidth}[0,0](40mm,80.5mm)
 		\centering
 		\th@titleFtSz\Baslikspacing \Baslikbir \\
-		\th@titleFtSz\Baslikspacing \Baslikiki \\
-		\th@titleFtSz\Baslikspacing \Baslikuc \\
+		\ifthenelse{\equal{\Baslikiki}{}}{}{\th@titleFtSz\Baslikspacing \Baslikiki \\}
+		\ifthenelse{\equal{\Baslikuc}{}}{}{\th@titleFtSz\Baslikspacing \Baslikuc \\}
 	\end{textblock*}
 	
 	\begin{textblock*}{\textwidth}[0,0](40mm,150mm)
@@ -1236,8 +1236,8 @@ KISALTMALAR\fi\normalfont}
 	\begin{textblock*}{\textwidth}[0,0](40mm,80.5mm)
 		\centering
         \th@titleFtSz\Baslikspacing \th@baslikbir \\
-		\th@titleFtSz\Baslikspacing \th@baslikiki \\
-		\th@titleFtSz\Baslikspacing \th@baslikuc \\
+		\ifthenelse{\equal{\th@baslikiki}{}}{}{\th@titleFtSz\Baslikspacing \th@baslikiki \\}
+		\ifthenelse{\equal{\th@baslikuc}{}}{}{\th@titleFtSz\Baslikspacing \th@baslikuc \\}
 	\end{textblock*}
 	
 	\begin{textblock*}{\textwidth}[0,0](40mm,150mm)
