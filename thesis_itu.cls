@@ -1696,7 +1696,7 @@ KISALTMALAR\fi\normalfont}
     \pagenumbering{roman}								
     \renewcommand*{\thepage}{\small{\roman{page}}}  	% Page number font size set to 11 pt for roman pages - SBÖ
 %   \setcounter{page}{\if@Bez 3\else 1\fi}%{\if@Ingilizce\if@Bez 3\else 1\fi\else 1\fi}
-    \setcounter{page}{\if@Ingilizce \if@Onluarkali 5 \else 3 \fi \else 
+    \setcounter{page}{\if@Ingilizce \if@Onluarkali 3 \else 1 \fi \else 
        \if@Onluarkali 3 \else 2 \fi \fi}
     \singlespacing
 	\renewcommand{\ttdefault}{pcr}   % MS Times fontu için
