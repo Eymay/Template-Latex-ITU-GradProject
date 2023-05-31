@@ -340,7 +340,7 @@
   \fi
   \if@Lisans
     \def\TezSeviyesi{SENIOR DESIGN PROJECT}
-    \def\TezSeviyesiTR{ B{\.I}T{\.I}RME ÇALIŞMASI}
+    \def\TezSeviyesiTR{ L{\.I}SANS B{\.I}T{\.I}RME TASARIM PROJES{\.I}}
   \fi
   % Modification of the size and the placement of bigstar - SBÖ
   \def\th@EnstituUpper{\MakeUppercase{\th@Institute}}
