@@ -1294,7 +1294,7 @@ KISALTMALAR\fi\normalfont}
 	\justifying
 	\makeatother	
 	\vspace*{0pt}
-	We are submitting the Senior Design Project Interim Report entitled as “\MakeUppercase{\th@Titlebir \th@Titleiki \th@Titleuc}”.
+	We are submitting the Senior Design Project Interim Report entitled as “\MakeUppercase{\th@Titlebir} \MakeUppercase{\th@Titleiki} \MakeUppercase{\th@Titleuc}”.
    The  Senior Design Project Interim Report has been prepared as to fulfill the relevant 
    regulations of the Electronics and Communication Engineering Department of Istanbul Technical
     University. We hereby confirm that we have realized all stages of the Senior Design Project 
