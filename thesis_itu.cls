@@ -1291,7 +1291,7 @@ KISALTMALAR\fi\normalfont}
 	%\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
 	\singlespacing  				% For single spacing in the top portion of kapak - SBÖ
 	\makeatletter
-	\raggedright
+	\justifying
 	\makeatother	
 	\vspace*{0pt}
 	We are submitting the Senior Design Project Interim Report entitled as “\MakeUppercase{\th@Titlebir \th@Titleiki \th@Titleuc}”.
@@ -1301,7 +1301,9 @@ KISALTMALAR\fi\normalfont}
     Interim Report by ourselves, and we have abided by the ethical rules with respect to academic 
     and professional integrity . 
 
+
   \vskip 30\p@ 
+  \raggedright
 	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimbir  \\
 	\hspace{70\p@}\th@titleFtSz (\th@ogrencinobir) \\
 	\vskip 10\p@ 
