@@ -86,7 +86,7 @@
     \else
       \hbox{}
       \thispagestyle{empty} 									% Empty even pages and do not include numbering in even pages - SBÖ
-      \newpage
+      %\newpage
       \if@twocolumn
 	\hbox{}
 	\newpage
@@ -103,7 +103,7 @@
     \else
       \hbox{}
       %\thispagestyle{empty} 								% Full even pages and include numbering in even pages - SBÖ
-      \newpage
+      %\newpage
       \if@twocolumn
 	\hbox{}
 	\newpage
