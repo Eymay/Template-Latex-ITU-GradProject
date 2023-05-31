@@ -489,6 +489,7 @@
 %================================== SON SAYFAYA ÖZGEÇMİŞ EKLENİYOR ====================================
 \AtEndDocument{
     \th@ozgecmispage
+    \th@edgeStash
 }
 
 %==================== CHAPTER VE SECTION TÜRKÇE/İNGİLİZCE İSİM VE FONT TANIMLARI ======================
@@ -790,6 +791,7 @@ KISALTMALAR\fi\normalfont}
 \newcommand{\ozgecmisbir}[1]{\th@StoreIn{\th@ozgecmisStashbir}{#1}}
 \newcommand{\ozgecmisiki}[1]{\th@StoreIn{\th@ozgecmisStashiki}{#1}}
 \newcommand{\ozgecmisuc}[1]{\th@StoreIn{\th@ozgecmisStashuc}{#1}}
+\newcommand{\edge}[1]{\th@StoreIn{\th@edgeStash}{#1}}
 \newcommand{\onsoz}[1]{\@TesekkurVartrue\th@StoreIn{\th@tesekkurStash}{#1}}
 \newcommand{\sembollistesi}[1]{\@SembolListesiVartrue\th@StoreIn{\th@symbollistStash}{#1}}
 \newcommand{\kisaltmalistesi}[1]{\@KisaltmaListesiVartrue\th@StoreIn{\th@kisaltmalistStash}{#1}}
