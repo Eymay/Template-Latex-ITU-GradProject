@@ -1711,6 +1711,7 @@ KISALTMALAR\fi\normalfont}
         \if@TesekkurVar
 	\th@Onsoz
         \fi
+    \cleardoublepage
         \ToCspacing
         \tableofcontents
         \if@KisaltmaListesiVar
