@@ -73,7 +73,7 @@
 
 % Bold Equation Number, Unbold Reference
 \makeatletter
-\def\tagform@#1{\maketag@@@{\bfseries(\ignorespaces#1\unskip\@@italiccorr)}} % All bold in eq. number incl. parentheses 
+\def\tagform@#1{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}} % All bold in eq. number incl. parentheses 
 %\renewcommand{\eqref}[1]{\textup{{\normalfont(\ref{#1}}\normalfont)}}
 \renewcommand{\eqref}[1]{\textup{\bf(\ref{#1})}} % All bold in eq. referencing with parentheses - SBÖ
 \makeatother
