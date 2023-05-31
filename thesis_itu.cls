@@ -1738,7 +1738,8 @@ KISALTMALAR\fi\normalfont}
 	  \th@Summarypage
 	\fi
      %\newpage				% Seems like no need (it is defined below) - SBÖ
-	\BolumSagdaKalsinNolu
+	%\BolumSagdaKalsinNolu
+    \cleardoublepage
     \oneandonehalf
      }
 
