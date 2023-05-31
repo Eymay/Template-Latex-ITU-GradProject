@@ -1285,7 +1285,7 @@ KISALTMALAR\fi\normalfont}
 
 %========================================= ETHICAL SETTINGS =========================================
 \newcommand*{\th@Ethical}{
-	\BolumSagdaKalsin
+    \BolumSagdaKalsinNolu
 	%\thispagestyle{empty}
 	%\addtocontents{toc}{\protect\addvspace{-10\p@}}
 	%\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
