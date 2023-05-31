@@ -1116,10 +1116,6 @@ KISALTMALAR\fi\normalfont}
 	   \th@titleAnaBilimDaliFtSz \Anabilim\\
     \end{textblock*}
  
- 	\begin{textblock*}{\textwidth}[0,0](40mm,210mm)
- 	   \centering
- 	   \th@titleAnaBilimDaliFtSz \Program \\
-    \end{textblock*}
 
 	\begin{textblock*}{\textwidth}[0,0](40mm,260mm)
 	   \centering
@@ -1198,10 +1194,6 @@ KISALTMALAR\fi\normalfont}
 		\th@titleAnaBilimDaliFtSz \Anabilim\\
 	\end{textblock*}
 	
-	\begin{textblock*}{\textwidth}[0,0](40mm,210mm)
-		\centering
-		\th@titleAnaBilimDaliFtSz \Program \\
-	\end{textblock*}
 	
     \begin{textblock*}{\textwidth}[0,0](40mm,230mm)
 	    \centering
