@@ -1597,7 +1597,7 @@ KISALTMALAR\fi\normalfont}
     \vspace*{-18pt}%
     \renewcommand{\ULdepth}{4pt}% 				 Added using ulem package for \uline command - SBÖ
     \renewcommand{\ULthickness}{1.5pt}% 	 Added for underline tickness change which was 0.4pt - SBÖ
-    \if@Ingilizce\hfill\vspace*{0truecm}{\bf\uline{Page}}~\else~\hfill\vspace*{0truecm}{\bf\uline{Sayfa}}\fi}\\ % Instead of \underline{text} - SBÖ
+    \if@Ingilizce\hfill\vspace*{0.5truecm}{\bf\uline{Page}}~\else~\hfill\vspace*{0.5truecm}{\bf\uline{Sayfa}}\fi}\\ % Instead of \underline{text} - SBÖ
     %\hfill\vspace*{0.5truecm}{\bf\underline{\if@Ingilizce Page\else Sayfa\fi}}} % Removed - SBÖ
 
     \let\orig@numberline\numberline
@@ -1619,7 +1619,7 @@ KISALTMALAR\fi\normalfont}
     \vspace*{-18pt}%
     \renewcommand{\ULdepth}{4pt}%				  Added using ulem package for \uline command - SBÖ
     \renewcommand{\ULthickness}{1.5pt}% 	Added for underline tickness change which was 0.4pt - SBÖ
-    \if@Ingilizce\hfill\vspace*{0truecm}{\bf\uline{Page}}~\else~\hfill\vspace*{0truecm}{\bf\uline{Sayfa}}\fi}\\ % Instead of \underline{text} - SBÖ
+    \if@Ingilizce\hfill\vspace*{0.5truecm}{\bf\uline{Page}}~\else~\hfill\vspace*{0.5truecm}{\bf\uline{Sayfa}}\fi}\\ % Instead of \underline{text} - SBÖ
     %\hfill\vspace*{0.5truecm}{\bf\underline{\if@Ingilizce Page\else Sayfa\fi}}}
 
     \let\orig@numberline\numberline
