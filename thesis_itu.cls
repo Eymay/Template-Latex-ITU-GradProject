@@ -1228,6 +1228,8 @@ KISALTMALAR\fi\normalfont}
 		\renewcommand{\ULdepth}{2.75pt} 	% Added using ulem package for \uline command - SBÖ
 		\renewcommand{\ULthickness}{1.5pt} 	% Added for underline tickness change which was 0.4pt - SBÖ
 		\centering
+\uline{\textbf{İSTANBUL TEKNİK ÜNİVERSİTESİ}} \\
+	\vskip 6\p@ 
 		\uline{{\bf\th@EnstituUpperTR}}\\ 	% Instead of \underline{text} - SBÖ
 	\end{textblock*}
 	
