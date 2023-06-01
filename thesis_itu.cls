@@ -1298,7 +1298,7 @@ KISALTMALAR\fi\normalfont}
    regulations of the Electronics and Communication Engineering Department of Istanbul Technical
     University. We hereby confirm that we have realized all stages of the Senior Design Project 
     Interim Report by ourselves, and we have abided by the ethical rules with respect to academic 
-    and professional integrity . 
+    and professional integrity. 
 
 
   \vskip 30\p@ 
