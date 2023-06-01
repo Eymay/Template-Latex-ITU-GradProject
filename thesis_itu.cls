@@ -1291,7 +1291,6 @@ KISALTMALAR\fi\normalfont}
 	%\addcontentsline{toc}{chapter}{\bf{\protect\frontcoverToC}}
 	\singlespacing  				% For single spacing in the top portion of kapak - SBÖ
 	\makeatletter
-	\justifying
 	\makeatother	
 	\vspace*{0pt}
 	We are submitting the Senior Design Project Interim Report entitled as “\MakeUppercase{\th@Titlebir} \MakeUppercase{\th@Titleiki} \MakeUppercase{\th@Titleuc}”.
@@ -1303,6 +1302,8 @@ KISALTMALAR\fi\normalfont}
 
 
   \vskip 30\p@ 
+
+\begin{textblock*}{\textwidth}[0,0](10mm,75mm)
   \raggedright
 	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimbir  \\
 	\hspace{70\p@}\th@titleFtSz (\th@ogrencinobir) \\
@@ -1312,8 +1313,8 @@ KISALTMALAR\fi\normalfont}
 	\vskip 10\p@ 
 	\hspace{70\p@}\th@titleFtSz \th@isimsoyisimuc  \\
     \hspace{70\p@}{\th@titleFtSz (\th@ogrencinouc)} \\
-
-	\sloppy 
+\end{textblock*}
+    \sloppy 
 	\vspace*{\fill}
 }
 
@@ -1477,8 +1478,8 @@ KISALTMALAR\fi\normalfont}
     \th@tesekkurStash   % the actual tesekkur
     \vspace{30pt} \\
     \TarihKucuk \hfill \th@isimsoyisimbir \\
-    \hfill \th@isimsoyisimiki \\
-    \hfill \th@isimsoyisimuc \\
+    \strut\hfill \th@isimsoyisimiki \\
+    \strut\hfill \th@isimsoyisimuc \\
     
     \vspace*{-2.54mm} \hfill \th@Unvan\\
     \addcontentsline{toc}{part}{\bf{\protect\onsoznameToC}}
