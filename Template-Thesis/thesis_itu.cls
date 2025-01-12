@@ -387,8 +387,8 @@
 \if@Ingilizce
   \def\baglac{and}
   \def\etal{et~al.}
-  \def\duzenciler{editors}
-  \def\duzenci{editor}
+  \def\duzenciler{(Eds.)}
+  \def\duzenci{(Ed.)}
   \def\duzenleyen{edited by}
   \def\surum{edition}
   \def\cilt{volume}

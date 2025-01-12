@@ -268,6 +268,9 @@ FUNCTION {space.word}
 FUNCTION {bbl.and}
 { "{\textbf{\baglac}}"}
 
+FUNCTION {bbl.ed.and}
+{ "{\baglac}"}
+
 FUNCTION {bbl.ve}
 { "{\textbf{ve}}"}
 
@@ -516,7 +519,6 @@ FUNCTION {format.names.ed}
     { s nameptr
       "{f{.}.~}{vv~}{ll}{ jj}"
       format.name$
-    bib.name.font
       bibinfo bibinfo.check
       't :=
       nameptr #1 >
@@ -534,7 +536,7 @@ FUNCTION {format.names.ed}
                   " " * bbl.etal emphasize *
                 }
                 {
-                  bbl.and
+                  bbl.ed.and
                   space.word * t *
                 }
               if$
@@ -815,9 +817,9 @@ FUNCTION {format.booktitle}
 FUNCTION {format.in.ed.booktitle}
 { format.booktitle duplicate$ empty$ 'skip$
     {
+      emphasize
       editor "editor" format.names.ed duplicate$ empty$ 'pop$
         {
-          "," *
           " " *
           get.bbl.editor
           ", " *
